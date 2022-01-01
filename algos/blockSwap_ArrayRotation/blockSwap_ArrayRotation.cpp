@@ -15,6 +15,7 @@ void swapArr(int Arr[], int start, int end, int k)
 
 void blockSwap(int Arr[], int n, int k)
 {
+    k %= n;
     if (k == n || k == 0)
         return;
 
@@ -42,6 +43,9 @@ void blockSwap(int Arr[], int n, int k)
 
 int main()
 {
-    cout << "Algorithm for Array Rotation - Block Swap Method\nRef Link - https://www.geeksforgeeks.org/block-swap-algorithm-for-array-rotation/\n";
+    cout << "Block Swap Method - Algorithm for Array Rotation\n"
+         << "Time Complexity - O(n)\n"
+         << "Space Complexity - O(1)\n"
+         << "Ref Link - https://www.geeksforgeeks.org/block-swap-algorithm-for-array-rotation/\n";
     return 0;
 }
